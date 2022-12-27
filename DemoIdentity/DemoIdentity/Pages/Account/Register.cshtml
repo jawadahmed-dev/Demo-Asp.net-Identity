@@ -1,0 +1,19 @@
+﻿@page
+@model DemoIdentity.Pages.Account.RegisterModel
+@{
+}
+
+<p> User Registeration</p>
+
+<div class="" style="padding:20px">
+    <form method="post" >
+        <span asp-validation-summary="All"></span>
+        <label asp-for="registerViewModel.UserName"></label>
+        <input type="text" asp-for="registerViewModel.UserName" /> </br>
+        <label asp-for="registerViewModel.Email"></label>
+        <input type="email" asp-for="registerViewModel.Email" /> </br>
+        <label asp-for="registerViewModel.Password"></label>
+        <input type="text" asp-for="registerViewModel.Password" /> </br>
+        <input type="submit" value="register" />
+    </form>
+</div>

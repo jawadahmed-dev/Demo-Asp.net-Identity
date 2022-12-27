@@ -1,0 +1,19 @@
+﻿@page
+@model DemoIdentity.Pages.Account.LoginModel
+@{
+}
+
+<p> User Login</p>
+
+<div class="" style="padding:20px">
+    <form method="post">
+        <span asp-validation-summary="All"></span>
+        <label asp-for="loginViewModel.UserName"></label>
+        <input type="text" asp-for="loginViewModel.UserName" /> </br>
+        <label asp-for="loginViewModel.Email"></label>
+        <input type="email" asp-for="loginViewModel.Email" /> </br>
+        <label asp-for="loginViewModel.Password"></label>
+        <input type="text" asp-for="loginViewModel.Password" /> </br>
+        <input type="submit" value="login" />
+    </form>
+</div>
